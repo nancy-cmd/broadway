@@ -65,7 +65,7 @@ html, body {
   
   .jumbotron {
     height: 800px;
-    background-image: url("");
+    background-image: url("./images/broadway-bg.avif");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
