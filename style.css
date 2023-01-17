@@ -23,7 +23,13 @@ html, body {
     display: inline-block;
     width: 80px;
   }
-  
+  .breadcrumb li+li::before {
+    padding: 10px;
+    content: ">";
+  }
+  .breadcrumb a {
+    text-decoration: none;
+  }
   main {
     text-align: center;
     position: relative;
