@@ -10,25 +10,64 @@ html, body {
     z-index: 5;
   }
   
-  nav {
+  /*nav {
     margin: 0;
     padding: 20px 0;
   }
   
   nav li {
-    color: #db8f38;
+    
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
     font-size: 16px;
     display: inline-block;
-    width: 80px;
+    width: 100px;
+  }*/
+  .breadcrumb {
+    text-align: left;
   }
-  .breadcrumb li+li::before {
-    padding: 10px;
-    content: ">";
+  .breadcrumb li {
+     float: left;
   }
+  
   .breadcrumb a {
     text-decoration: none;
+    color: #fff;
+    background: #db8f38;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 15px;
+    padding: 0 5px;
+ 
+  }
+  .breadcrumb a::before,
+.breadcrumb a::after {
+  content: "";
+  position: absolute;
+  border-color: #db8f38;
+  border-style: solid;
+  border-width: 15px 5px;
+}
+  .breadcrumb a::before {
+    left: -10px;
+    border-left-color: transparent;
+  }
+  .breadcrumb a::after {
+    left: 100%;
+    border-color: transparent;
+    border-left-color: #db8f38;
+  }
+  .breadcrumb a:hover {
+    background-color: blue;
+  }
+  .breadcrumb a:hover::before {
+    border-color: blue;
+    border-left-color: transparent;
+  }
+  .breadcrumb a:hover::after {
+    border-left-color: blue;
   }
   main {
     text-align: center;
